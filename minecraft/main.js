@@ -58,16 +58,16 @@ function my_keydown(e)
 {
 keypressed = e.keyCode;
 
-if(e.shiftkey == true && keypressed == "80")
+if(e.shiftKey == true && keypressed == "80")
 {
-block_height  += 10;
-block_width  +=  10;
+  block_height = block_height + 10;
+  block_width  = block_width + 10;
 }
 
-if(e.shiftkey == true && keypressed == "77")
+if(e.shiftKey == true && keypressed == "77")
 {
-block_height  -= 10;
-block_width  -=  10;
+block_height = block_height - 10;
+block_width  = block_width - 10;
 }
 
 if(keypressed == "38")
